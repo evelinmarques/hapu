@@ -1,8 +1,15 @@
-## Newslleter:
+## About:
 
 This is a simplified version of Hapu’s ‘Become a Nanny Share Host’ landing page. 
 
-## Technologies:
+## Expected visual result:
+
+<img src="https://user-images.githubusercontent.com/56482367/135189902-cdcd155a-fcd8-409e-bc33-dbaed303d492.png">
+
+<img src="https://user-images.githubusercontent.com/56482367/135189974-a5ad3855-8c9c-4230-aeb1-3de856af0e8e.png">
+
+
+## 🛠 Technologies:
 
 - JSX;
 - React.js
@@ -19,7 +26,7 @@ This is a simplified version of Hapu’s ‘Become a Nanny Share Host’ landing
 - Optimizely
 
 
-## How to run
+## 💻 How to run
   - You must have Git installed and configured on your computer.
   - You must have Node.js installed on your computer
   - You will also need the Yarn or NPM package manager
@@ -135,3 +142,6 @@ The name of the flag has to be:
 - Put **Metrics**(registerInNannyShare)
 - Put **Deliver Variations** (main_text, secundary_text)
 -  Turn on the flag
+
+
+## 🚀 Deploy: <a href="https://hapu-k82t0y9if-hapuevelinmarques.vercel.app/">Clique aqui</a> 
