@@ -1,4 +1,4 @@
-## Newslleter:
+## About:
 
 This is a simplified version of Hapu’s ‘Become a Nanny Share Host’ landing page. 
 
