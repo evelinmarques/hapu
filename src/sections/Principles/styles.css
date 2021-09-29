@@ -1,0 +1,92 @@
+#principles  {
+  display: flex;
+  justify-content: center;
+}
+
+#principles .container {
+  min-height: 476px;
+  max-height: 876px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.principles-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.principles-text-content {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.principles-content img {
+  display: none;
+  width: 100%;
+  max-width: 1524px;
+
+  height: 100%;
+}
+
+.principles-content h2 {
+  width: 50%;
+  text-align: center;
+  font-size: var(--font-h3);
+
+  color: var(--color-grey-regular);
+}
+
+.principles-content p {
+  text-align: center;
+  font-size: var(--font-h4);
+
+  margin-top: 16px;
+
+  color: var(--color-grey-regular);
+}
+
+.principles-content a {
+  text-align: center;
+
+  color: var(--brand-color-secondary);
+  text-decoration: underline;
+  font-size: var(--font-link);
+
+  cursor: pointer;
+
+  margin-top: 24px;
+}
+
+@media screen and (min-width: 800px) {
+  #principles .container {
+    height: 100%;
+    margin-bottom: 0;
+  }
+
+  .principles-content {
+    padding: 64px 0;
+  }
+
+  .principles-content img {
+    display: inline;
+    padding-top: 64px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #principles .container {
+    height: 876px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #principles .container {
+    height: 100%;
+    
+  }
+}

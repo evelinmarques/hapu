@@ -1,0 +1,133 @@
+.navBar {
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  height: 64px;
+  padding: 0 16px;
+  background: transparent;
+
+}
+
+.navBar-container {
+  display: flex;
+  justify-content: center;
+
+  height: 100%;
+}
+
+.navBar.active {
+  background: var(--color-white);
+  color: var(--color-grey-regular);
+  bottom: 0;
+  border-top: 1px solid var(--color-grey-light);
+}
+
+.navBar.active a {
+  color: var(--color-grey-regular);
+}
+
+.navBar.active .navBar-content{
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.navBar.active .navBar-content a:first-child {
+  display: none;
+}
+
+.navBar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1524px;
+}
+
+.navBar-content a {
+  cursor: pointer;
+
+  text-decoration: none;
+  font-size: var(--font-h5);
+  color: var(--color-white);
+
+  transition: background 0.3s;
+}
+
+.navBar-content a:hover {
+  color: rgb(238, 238, 238);
+}
+
+.navBar-content a + a {
+  display: none;
+  margin-left: 24px;
+}
+
+.navBar-container-options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navBar-container-options a:nth-child(2) {
+  margin-left: 40px;
+}
+
+.navBar-container-login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navBar-container-login button {
+  border: none;
+  height: 44px;
+  width: 234px;
+  border-radius: 4px;
+
+  cursor: pointer;
+  color: var(--color-white);
+  background: var(--brand-color-primary);
+  transition: background 0.3s;
+}
+
+.navBar-container-login button:hover {
+  background: #008b5d;
+}
+
+.navBar-container-login a {
+  display: none;
+  margin-left: 24px;
+}
+@media screen and (min-width: 850px) {
+  .navBar.active {
+    bottom: auto;
+    border-top: 0;
+    border-bottom: 2px solid var(--color-grey-light);
+    height: 68px;
+  }
+
+  .navBar.active .navBar-content{
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  .navBar.active .navBar-content a:first-child {
+    display: inline;
+  }
+
+  .navBar-content a + a {
+    display: inline;
+    margin-left: 32px;
+  }
+
+  .navBar-container-login a {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navBar {
+    padding: 0 20px;
+  }
+}
